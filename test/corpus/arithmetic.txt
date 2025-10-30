@@ -1,0 +1,443 @@
+================================================================
+ABS instruction
+================================================================
+
+ABS r0 r1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+ADD instruction
+================================================================
+
+ADD r2 r3 r4
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+CEIL instruction
+================================================================
+
+CEIL r5 r6
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+DIV instruction
+================================================================
+
+DIV r7 r8 r9
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+EXP instruction
+================================================================
+
+EXP r10 r11
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+FLOOR instruction
+================================================================
+
+FLOOR r12 r13
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+LERP instruction
+================================================================
+
+LERP r14 r15 r0 r1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+LOG instruction
+================================================================
+
+LOG r2 r3
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+MAX instruction
+================================================================
+
+MAX r4 r5 r6
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+MIN instruction
+================================================================
+
+MIN r7 r8 r9
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+MOD instruction
+================================================================
+
+MOD r10 r11 r12
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+MOVE instruction
+================================================================
+
+MOVE r13 r14
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+MUL instruction
+================================================================
+
+MUL r15 r0 r1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+POW instruction
+================================================================
+
+POW r2 r3 r4
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+RAND instruction
+================================================================
+
+RAND r5
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register))))))
+
+================================================================
+ROUND instruction
+================================================================
+
+ROUND r6 r7
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SELECT instruction
+================================================================
+
+SELECT r8 r9 r10 r11
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SQRT instruction
+================================================================
+
+SQRT r12 r13
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SUB instruction
+================================================================
+
+SUB r14 r15 r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+TRUNC instruction
+================================================================
+
+TRUNC r1 r2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))

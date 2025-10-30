@@ -1,0 +1,12 @@
+alias test r1
+define lt LogicType.Setting
+define lt Average
+
+init:
+
+main:
+move r0 rgas
+move r0 pi
+
+yield
+j main

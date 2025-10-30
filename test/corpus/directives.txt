@@ -1,0 +1,249 @@
+================================================================
+ALIAS directive
+================================================================
+
+alias SGS d0
+alias SGS2 d1
+alias SGS3 d2
+alias SGS4 d3
+alias SGS5 d4
+alias SGS6 d5
+alias SGS7 db
+alias RoomPressure r0
+alias Room_Pressure r1
+alias room_pressure r2
+alias roomPressure r3
+alias rP r4
+alias pp r5
+alias DD r6
+alias RoomPressure r7
+alias Room_Pressure r8
+alias room_pressure r9
+alias roomPressure r10
+alias rP r11
+alias pp r12
+alias DD r13
+alias temp r14
+alias TEMP2 r15
+alias RecastStackPointer sp
+alias ReturnLine ra
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (device))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (device))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (device))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (device))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (device))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (device))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (device))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register)))))
+
+================================================================
+DEFINE directive
+================================================================
+
+define aBc HASH("StructureGasSensor")
+define DDD STR("CLEAR!")
+define ave Average
+define gasRatio LogicType.RatioCarbonDioxideInput
+define C_OXYGEN 21.1
+define SIndex 8
+define RefId $8B0E
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (number_literal
+        (integer_literal
+          (hash
+            keyword: (keyword))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (number_literal
+        (integer_literal
+          (str
+            keyword: (keyword))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (number_literal
+        (integer_literal
+          (enum)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (number_literal
+        (integer_literal
+          (enum)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (number_literal
+        (float))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (number_literal
+        (integer_literal
+          (integer)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (number_literal
+        (integer_literal
+          (hex))))))

@@ -1,0 +1,1389 @@
+================================================================
+BAP instruction
+================================================================
+
+BAP r3 r4 r5 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BAPAL instruction
+================================================================
+
+BAPAL r7 r8 r9 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BAPZ instruction
+================================================================
+
+BAPZ r11 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BAPZAL instruction
+================================================================
+
+BAPZAL r13 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BDNS instruction
+================================================================
+
+BDNS d0:0 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (network_endpoint
+          device: (device)))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BDNSAL instruction
+================================================================
+
+BDNSAL d1:0 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (network_endpoint
+          device: (device)))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BDNVL instruction
+================================================================
+
+BDNVL d0 LogicType.Setting r1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (device_literal
+          (device)))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+BDNVS instruction
+================================================================
+
+BDNVS d1 LogicType.Setting r2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (device_literal
+          (device)))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+BDSE instruction
+================================================================
+
+BDSE d2:2 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (network_endpoint
+          device: (device)))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BDSEAL instruction
+================================================================
+
+BDSEAL d3:3 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (network_endpoint
+          device: (device)))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BEQ instruction
+================================================================
+
+BEQ r5 r6 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BEQAL instruction
+================================================================
+
+BEQAL r8 r9 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BEQZ instruction
+================================================================
+
+BEQZ r11 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BEQZAL instruction
+================================================================
+
+BEQZAL r13 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGE instruction
+================================================================
+
+BGE r15 r0 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGEAL instruction
+================================================================
+
+BGEAL r2 r3 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGEZ instruction
+================================================================
+
+BGEZ r5 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGEZAL instruction
+================================================================
+
+BGEZAL r7 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGT instruction
+================================================================
+
+BGT r9 r10 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGTAL instruction
+================================================================
+
+BGTAL r12 r13 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGTZ instruction
+================================================================
+
+BGTZ r15 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BGTZAL instruction
+================================================================
+
+BGTZAL r1 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLE instruction
+================================================================
+
+BLE r3 r4 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLEAL instruction
+================================================================
+
+BLEAL r6 r7 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLEZ instruction
+================================================================
+
+BLEZ r9 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLEZAL instruction
+================================================================
+
+BLEZAL r11 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLT instruction
+================================================================
+
+BLT r13 r14 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLTAL instruction
+================================================================
+
+BLTAL r0 r1 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLTZ instruction
+================================================================
+
+BLTZ r3 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BLTZAL instruction
+================================================================
+
+BLTZAL r5 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNA instruction
+================================================================
+
+BNA r7 r8 r9 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNAAL instruction
+================================================================
+
+BNAAL r11 r12 r13 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNAN instruction
+================================================================
+
+BNAN r15 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNAZ instruction
+================================================================
+
+BNAZ r1 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNAZAL instruction
+================================================================
+
+BNAZAL r3 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNE instruction
+================================================================
+
+BNE r5 r6 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNEAL instruction
+================================================================
+
+BNEAL r8 r9 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNEZ instruction
+================================================================
+
+BNEZ r11 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BNEZAL instruction
+================================================================
+
+BNEZAL r13 targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+BRAP instruction
+================================================================
+
+BRAP r15 r0 r1 24
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRAPZ instruction
+================================================================
+
+BRAPZ r3 12
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRDNS instruction
+================================================================
+
+BRDNS d4 4
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (device_literal
+          (device)))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRDSE instruction
+================================================================
+
+BRDSE d0 3
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (device_literal
+          (device)))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BREQ instruction
+================================================================
+
+BREQ r7 r8 20
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BREQZ instruction
+================================================================
+
+BREQZ r10 21
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRGE instruction
+================================================================
+
+BRGE r12 r13 22
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRGEZ instruction
+================================================================
+
+BRGEZ r15 23
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRGT instruction
+================================================================
+
+BRGT r1 r2 24
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRGTZ instruction
+================================================================
+
+BRGTZ r4 25
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRLE instruction
+================================================================
+
+BRLE r6 r7 26
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRLEZ instruction
+================================================================
+
+BRLEZ r9 27
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRLT instruction
+================================================================
+
+BRLT r11 r12 28
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRLTZ instruction
+================================================================
+
+BRLTZ r14 29
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRNA instruction
+================================================================
+
+BRNA r0 r1 r2 30
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRNAN instruction
+================================================================
+
+BRNAN r4 31
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRNAZ instruction
+================================================================
+
+BRNAZ r6 32
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRNE instruction
+================================================================
+
+BRNE r8 r9 33
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+BRNEZ instruction
+================================================================
+
+BRNEZ r11 34
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (lines
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+J instruction
+================================================================
+
+J targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+JAL instruction
+================================================================
+
+JAL targetLabel
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (branch_target
+        (integerish
+          (reference
+            (identifier)))))))
+
+================================================================
+JR instruction
+================================================================
+
+JR r15
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (lines
+        (integerish
+          (reference
+            (register_literal
+              (register))))))))

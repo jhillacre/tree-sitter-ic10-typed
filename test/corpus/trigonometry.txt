@@ -1,0 +1,143 @@
+================================================================
+ACOS instruction
+================================================================
+
+ACOS r2 r3
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+ASIN instruction
+================================================================
+
+ASIN r4 r5
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+ATAN instruction
+================================================================
+
+ATAN r6 r7
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+ATAN2 instruction
+================================================================
+
+ATAN2 r8 r9 r10
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+COS instruction
+================================================================
+
+COS r11 r12
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SIN instruction
+================================================================
+
+SIN r13 r14
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+TAN instruction
+================================================================
+
+TAN r15 r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))

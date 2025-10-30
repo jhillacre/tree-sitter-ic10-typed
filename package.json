@@ -1,0 +1,24 @@
+{
+  "name": "tree-sitter-ic10-type",
+  "version": "1.0.0",
+  "description": "Typed IC10 grammar for Stationeers. IC10 is the game's virtual embedded language used for automation and control systems.",
+  "main": "bindings/node",
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "highlight": "tree-sitter highlight --scope ic10 examples/demo.ic10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jhillacre/tree-sitter-ic10-type"
+  },
+  "keywords": [
+    "tree-sitter",
+    "grammar",
+    "ic10"
+  ],
+  "author": "Joel Hillacre",
+  "license": "MIT",
+  "devDependencies": {
+    "node-addon-api": "^8.5.0"
+  }
+}

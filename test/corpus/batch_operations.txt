@@ -1,0 +1,488 @@
+================================================================
+LB instruction
+================================================================
+
+lB sP hASH("StructureTurboVolumePump") Setting Average
+Lb Ra Hash("StructureLightLongWide") On Sum
+lb r0 hash("StructureLiquidTank") LogicType.RatioLiquidNitrousOxideOutput2 Minimum
+LB r1 hash("StructureInsulatedTank") LogicType.RatioOxygenInput Maximum
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum)))))))
+
+================================================================
+LBN instruction
+================================================================
+
+lbn sp HASH("StructureLogicSwitch") HASH("Execute") Activate Minimum
+LBN RA hash("StructureLogicMemory") hash("CombustionEstimate") LogicType.Setting Sum
+lBn r2 HaSh("StructureAirlock") HaSh("External") LogicType.Open Maximum
+LbN r3 hASH("StructureGasSensor") hASH("Main") LogicType.RatioCarbonDioxideInput2 Average
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum)))))))
+
+================================================================
+LBNS instruction
+================================================================
+
+LBNS SP hash("StructureFiltration") hash("n2o") 1 LogicSlotType.OccupantHash Minimum
+lbns ra HASH("StructureCircuitHousing") HASH("ingotDispenser") 0 LogicSlotType.LineNumber Maximum
+LbNs r4 HaSh("StructureActiveVent") HaSh("Exhaust") 2 LogicSlotType.OccupantHash Sum
+lbns r5 hAsH("StructureRefrigeratedVendingMachine") hAsH("OxiteStorage") 66 LogicSlotType.OccupantHash Average
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (slot_index
+        (integerish
+          (integer_literal
+            (integer))))
+      operand: (logic_slot_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (slot_index
+        (integerish
+          (integer_literal
+            (integer))))
+      operand: (logic_slot_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (slot_index
+        (integerish
+          (integer_literal
+            (integer))))
+      operand: (logic_slot_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (slot_index
+        (integerish
+          (integer_literal
+            (integer))))
+      operand: (logic_slot_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (batch_mode
+        (integerish
+          (integer_literal
+            (enum)))))))
+
+================================================================
+SB instruction
+================================================================
+
+SB hash("StructureVolumePump") LogicType.Setting sp
+sB hash("StructurePressureRegulator") LogicType.On Ra
+Sb hash("Transmitter") On r10
+sB hash("LogicDial") Mode r11
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register))))))
+
+===============================================================
+SBN instruction
+===============================================================
+
+sbn hash("Console") hash("GroupA") LogicType.Setting r12
+SBn hash("Sensor") hash("Array") Setting r13
+sBn hash("Transmitter") hash("Relay") Power r14
+sBN hash("LogicSwitch") hash("Override") LogicType.On r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register)))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (hash
+              keyword: (keyword)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register))))))

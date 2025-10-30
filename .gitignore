@@ -1,0 +1,12 @@
+# node modules
+node_modules/
+
+# build output
+build/
+parser.o
+# linux
+*.so
+# windows
+*.dll
+# macOS
+*.dylib

@@ -1,0 +1,399 @@
+================================================================
+SAP instruction
+================================================================
+
+SAP r5 r6 r7 r8
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SAPZ instruction
+================================================================
+
+SAPZ r9 r10
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SEQ instruction
+================================================================
+
+SEQ r11 r12 r13
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SEQZ instruction
+================================================================
+
+SEQZ r14 r15
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SGE instruction
+================================================================
+
+SGE r0 r1 r2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SGEZ instruction
+================================================================
+
+SGEZ r3 r4
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SGT instruction
+================================================================
+
+SGT r5 r6 r7
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SGTZ instruction
+================================================================
+
+SGTZ r8 r9
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SLE instruction
+================================================================
+
+SLE r10 r11 r12
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SLEZ instruction
+================================================================
+
+SLEZ r13 r14
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SLT instruction
+================================================================
+
+SLT r15 r0 r1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SLTZ instruction
+================================================================
+
+SLTZ r2 r3
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SNA instruction
+================================================================
+
+SNA r4 r5 r6 r7
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SNAZ instruction
+================================================================
+
+SNAZ r8 r9
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SNAN instruction
+================================================================
+
+SNAN r10 r11
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SNANZ instruction
+================================================================
+
+SNANZ r12 r13
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SNE instruction
+================================================================
+
+SNE r14 r15 r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SNEZ instruction
+================================================================
+
+SNEZ r1 r2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))

@@ -1,0 +1,126 @@
+# weather service transmitter
+alias WS d0 # weather station
+alias DS d1 # daylight sensor
+alias Tx d2 # active mode transmitter
+alias Speaker d3 # tablet/hardsuit passive mode tx
+alias M r0 # WS.Mode (we add 3 = obscured)
+alias T r1 # WS.NextWeatherEventTime (sec, raw)
+alias V r2 # DaylightSensor.Vertical (deg)
+alias LV r3 # last Vertical
+alias DV r4 # dV = V - LV (deg/tick)
+alias AUX r5 # scratch
+alias TMP r6 # scratch
+alias SR r7 # sec to sunrise (0 if N/A)
+alias SS r8 # sec to sunset (0 if N/A)
+alias Day r9 # 1 if V>0 (geometric day, eclipse-proof)
+alias In r10 # 1 if M==1 (incoming)
+alias Flag r11 # scratch / predicate
+alias ET r12 # effective storm time (sec; sunrise-gated)
+alias Alert r13 # alert selector (15s or minute marks)
+alias Pack r14 # packed 32-bit frame
+alias Last r15 # last ET for de-dupe
+init:
+bdns Speaker skipVol
+s Speaker Volume 80
+skipVol:
+l LV DS Vertical
+move Last -1 # prevent first tick repeat alert
+main:
+yield
+l M WS Mode
+l T WS NextWeatherEventTime
+l V DS Vertical
+sgt Day V 0 # geometric, eclipse/terrain nonfactors
+
+sub DV V LV
+# horizon clamp for dV (avoid div by zero)
+abs AUX DV
+abs TMP V
+slt Flag AUX 0.001
+select AUX Flag 0.001 AUX # max(|dV|, eps)
+div TMP TMP AUX # |V|/max(|dV|, eps) = ticks to 0
+mul TMP TMP 0.5 # ticks->seconds (loop ~0.5s/tick)
+
+# sunrise when V<=0 && dV>0
+sle Flag V 0
+sgt AUX DV 0
+and Flag Flag AUX
+select SR Flag TMP 0
+
+# sunset when V>0 && dV<0
+sgt Flag V 0
+slt AUX DV 0
+and Flag Flag AUX
+select SS Flag TMP 0
+
+seq In M 1 # incoming?
+
+# if night & incoming & T<SR -> use SR
+move ET T
+seq Flag Day 0
+and Flag Flag In
+slt AUX T SR
+and Flag Flag AUX
+select ET Flag SR T
+
+# publish "obscured" mode=3 when night & incoming
+seq Flag Day 0
+and Flag Flag In
+select AUX Flag 3 M # AUX = output mode
+
+# pack Day|Mode(2b)|ET(14b@0.5s)|
+#        SR(13b@0.5s)|SS(13b@0.5s)
+# quantize: x2 then round -> half-second resolution
+mul Flag ET 2
+round Flag Flag
+max Flag Flag 0
+min Flag Flag 16383 # 14 bits -> ~136.5 min max
+
+mul SR SR 2
+round SR SR
+max SR SR 0
+min SR SR 8191 # 13 bits -> ~68.25 min max
+
+mul SS SS 2
+round SS SS
+max SS SS 0
+min SS SS 8191
+
+# bit layout (LSB->MSB):
+#   [0]=Day (1) | [1..2]=Mode (2) | [3..16]=ET (14)
+#   | [17..29]=SR (13) | [30..42]=SS (13)
+move Pack 0
+ins Pack 0 1 Day
+ins Pack 1 2 AUX     # mode
+ins Pack 3 14 Flag   # ET
+ins Pack 17 13 SR
+ins Pack 30 13 SS
+
+# NOTE: total payload = 1+2+14+13+13=43 bits (<53-bit mantissa limit)
+
+s Tx Setting Pack # single transmitter for all fields
+move LV V
+
+# alerts driven by EFFECTIVE storm time (ET)
+bdns Speaker main
+mod DV ET 60      # minute marks
+seq DV DV 0
+sne TMP Last ET   # new second?
+seq Alert ET 15   # final 15s
+sne Flag ET 0     # skip 0 countdown
+
+and DV DV In
+and DV DV TMP
+and DV DV Flag
+and Alert Alert In
+and Alert Alert TMP
+and Alert Alert Flag
+
+select DV DV 18 0     # alert id 18 on minute
+select DV Alert 15 DV # alert id 15 at 15s
+seq TMP DV 0
+bnez TMP main         # nothing to play
+
+s Speaker SoundAlert DV
+move Last ET
+j main

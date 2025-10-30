@@ -1,0 +1,27 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "ic10",
+      "path": ".",
+      "camelcase": "IC10",
+      "title": "IC10",
+      "scope": "source.ic10",
+      "file-types": ["ic10"],
+      "injection-regex": "^ic10$",
+      "class-name": "TreeSitterIc10Typed"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "IC10 is the virtual embedded language in the game Stationeers used for automation and control systems.",
+    "authors": [
+      { "name": "Joel Hillare", "email": "joel@403forbidden.ca" }
+    ],
+    "links": { "repository": "https://github.com/jhillacre/tree-sitter-ic10-type" }
+  },
+  "bindings": {
+    "c": true, "go": true, "node": true, "python": true, "rust": true, "swift": true, "zig": false
+  }
+}

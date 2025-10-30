@@ -1,0 +1,242 @@
+================================================================
+RMAP instruction
+================================================================
+
+RMAP r4 d5 r5
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_no_network
+        (device_literal
+          (device)))
+      operand: (hashish
+        (integerish
+          (reference
+            (register_literal
+              (register))))))))
+
+================================================================
+L instruction
+================================================================
+
+L r11 d1:0 r12
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_any
+        (network_endpoint
+          device: (device)))
+      operand: (logic_type
+        (integerish
+          (reference
+            (register_literal
+              (register))))))))
+
+================================================================
+LD instruction
+================================================================
+
+LD r13 r14 LogicType.Setting
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_reference
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum)))))))
+
+================================================================
+LR instruction
+================================================================
+
+LR r15 d5 Recipe 1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_no_network
+        (device_literal
+          (device)))
+      operand: (reagent_mode
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (hashish
+        (integerish
+          (integer_literal
+            (integer)))))))
+
+================================================================
+LS instruction
+================================================================
+
+LS r0 d0 2 LogicSlotType.Pressure
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_no_network
+        (device_literal
+          (device)))
+      operand: (slot_index
+        (integerish
+          (integer_literal
+            (integer))))
+      operand: (logic_slot_type
+        (integerish
+          (integer_literal
+            (enum)))))))
+
+================================================================
+S instruction
+================================================================
+
+S d2:2 r1 r2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_any
+        (network_endpoint
+          device: (device)))
+      operand: (logic_type
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SD instruction
+================================================================
+
+SD r3 LogicType.Setting r4
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_reference
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (logic_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (reference
+        (register_literal
+          (register))))))
+
+================================================================
+SDNS instruction
+================================================================
+
+SDNS r5 d1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_any
+        (device_literal
+          (device))))))
+
+================================================================
+SDSE instruction
+================================================================
+
+SDSE r6 d2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_any
+        (device_literal
+          (device))))))
+
+================================================================
+SS instruction
+================================================================
+
+SS d3 3 LogicSlotType.Pressure r7
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_no_network
+        (device_literal
+          (device)))
+      operand: (slot_index
+        (integerish
+          (integer_literal
+            (integer))))
+      operand: (logic_slot_type
+        (integerish
+          (integer_literal
+            (enum))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))

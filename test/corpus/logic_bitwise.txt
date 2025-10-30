@@ -1,0 +1,271 @@
+================================================================
+AND instruction
+================================================================
+
+AND r3 r4 r5
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+OR instruction
+================================================================
+
+OR r6 r7 r8
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+XOR instruction
+================================================================
+
+XOR r9 r10 r11
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+NOT instruction
+================================================================
+
+NOT r12 r13
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+NOR instruction
+================================================================
+
+NOR r14 r15 r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SLA instruction
+================================================================
+
+SLA r1 r2 r3
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SLL instruction
+================================================================
+
+SLL r4 r5 r6
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SRA instruction
+================================================================
+
+SRA r7 r8 r9
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SRL instruction
+================================================================
+
+SRL r10 r11 r12
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+INS instruction
+================================================================
+
+INS r13 r14 r15 r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (offset
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (length
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+EXT instruction
+================================================================
+
+EXT r1 r2 r3 r4
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register))))
+      operand: (offset
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (length
+        (integerish
+          (reference
+            (register_literal
+              (register))))))))

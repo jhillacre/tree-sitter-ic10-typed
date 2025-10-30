@@ -1,0 +1,260 @@
+================================================================
+Comments - End of line
+================================================================
+
+HCF # end-of-line-comment
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)))
+  (comment))
+
+================================================================
+Comments - Full line
+================================================================
+
+# full-line-comment
+HCF
+
+---
+
+(source_file
+  (comment)
+  (statement
+    (instruction
+      opcode: (opcode))))
+
+================================================================
+Labels
+================================================================
+
+init:
+main:
+
+---
+
+(source_file
+  (statement
+    (label
+      name: (identifier)))
+  (statement
+    (label
+      name: (identifier))))
+
+================================================================
+SLEEP instruction - register
+================================================================
+
+sleep r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+SLEEP instruction - register variant
+================================================================
+
+sLeep rr1
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (register_literal
+            (register_indirect)))))))
+
+================================================================
+SLEEP instruction - hash
+================================================================
+
+slEep HASH("TIMER-00-3QZIxd")
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (hash
+              keyword: (keyword))))))))
+
+================================================================
+SLEEP instruction - string
+================================================================
+
+sleEp STR("NoIdea")
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (str
+              keyword: (keyword))))))))
+
+================================================================
+SLEEP instruction - constant
+================================================================
+
+sleeP pi
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (constant)))))))
+
+================================================================
+SLEEP instruction - integer
+================================================================
+
+sleep 10
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer)))))))
+
+================================================================
+SLEEP instruction - hex
+================================================================
+
+sleep $A
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (hex)))))))
+
+================================================================
+SLEEP instruction - identifier
+================================================================
+
+sleep someIdentifier
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (numberish
+        (reference
+          (identifier))))))
+
+================================================================
+YIELD instruction - uppercase
+================================================================
+
+YIELD
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode))))
+
+================================================================
+YIELD instruction - mixed case
+================================================================
+
+yIeLd
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode))))
+
+================================================================
+YIELD instruction - lowercase
+================================================================
+
+yield
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode))))
+
+================================================================
+HCF instruction - uppercase
+================================================================
+
+HCF
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode))))
+
+================================================================
+HCF instruction - mixed case
+================================================================
+
+HCf
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode))))
+
+================================================================
+HCF instruction - lowercase
+================================================================
+
+hcf
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode))))

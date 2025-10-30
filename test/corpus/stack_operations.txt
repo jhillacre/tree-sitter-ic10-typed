@@ -1,0 +1,188 @@
+================================================================
+POP instruction
+================================================================
+
+POP r2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register))))))
+
+================================================================
+PEEK instruction
+================================================================
+
+PEEK r3
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register))))))
+
+================================================================
+CLR instruction
+================================================================
+
+CLR d2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_no_network
+        (device_literal
+          (device))))))
+
+================================================================
+CLRD instruction
+================================================================
+
+CLRD r0
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_reference
+        (integerish
+          (reference
+            (register_literal
+              (register))))))))
+
+================================================================
+GET instruction
+================================================================
+
+GET r1 d3 r2
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_no_network
+        (device_literal
+          (device)))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+GETD instruction
+================================================================
+
+GETD r3 r4 r5
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (register_literal
+          (register)))
+      operand: (device_reference
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (stack_index
+        (integerish
+          (reference
+            (register_literal
+              (register))))))))
+
+================================================================
+PUT instruction
+================================================================
+
+PUT d4 r6 r7
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_no_network
+        (device_literal
+          (device)))
+      operand: (stack_index
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+PUTD instruction
+================================================================
+
+PUTD r8 r9 r10
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (device_reference
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (stack_index
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
+
+================================================================
+POKE instruction
+================================================================
+
+POKE r8 r9
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (stack_index
+        (integerish
+          (reference
+            (register_literal
+              (register)))))
+      operand: (numberish
+        (reference
+          (register_literal
+            (register)))))))
