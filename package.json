@@ -20,5 +20,8 @@
   "license": "MIT",
   "devDependencies": {
     "node-addon-api": "^8.5.0"
+  },
+  "dependencies": {
+    "tree-sitter-cli": "^0.25.10"
   }
 }
