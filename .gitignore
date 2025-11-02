@@ -10,3 +10,6 @@ parser.o
 *.dll
 # macOS
 *.dylib
+
+# cmd bin
+tree-sitter

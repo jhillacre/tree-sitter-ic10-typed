@@ -183,6 +183,135 @@ alias ReturnLine ra
         (register)))))
 
 ================================================================
+Alias identifiers with punctuation
+================================================================
+
+alias test_underscore r1
+alias test-hyphen r2
+alias test.period r3
+alias test@symbol r4
+alias test$dollar r5
+alias test+plus r7
+alias test=equals r8
+
+move test_underscore 1
+move test-hyphen 2
+move test.period 3
+move test@symbol 4
+move test$dollar 5
+move test+plus 6
+move test=equals 7
+
+---
+
+(source_file
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (identifier)
+      operand: (alias_target
+        (register))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (identifier))
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (identifier))
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (identifier))
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (identifier))
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (identifier))
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (identifier))
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer))))))
+  (statement
+    (instruction
+      opcode: (opcode)
+      operand: (reference
+        (identifier))
+      operand: (numberish
+        (number_literal
+          (integer_literal
+            (integer)))))))
+
+================================================================
 DEFINE directive
 ================================================================
 

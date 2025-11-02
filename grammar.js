@@ -142,7 +142,8 @@ module.exports = grammar({
       ")"
     ),
 
-    identifier: $ => token(prec(0, /[a-zA-Z_][a-zA-Z0-9_]*/)), // defines, aliases, and labels
+    // Allow aliases/identifiers with the punctuation confirmed as valid in-game.
+    identifier: $ => token(prec(0, /[a-zA-Z_][a-zA-Z0-9_@.$+=-]*/)),
 
     register: $ => token(prec(2, choice(
       caseInsensitive("sp"),
